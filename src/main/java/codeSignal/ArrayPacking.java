@@ -10,7 +10,7 @@ public class ArrayPacking {
 
     static int arrayPacking(int[] a) {
 
-        String R = "";
+        var R = "";
         for (int i : a) {
             R = String.format("%8s", Integer.toBinaryString(i)).replace(' ', '0') + R;
         }
