@@ -5,11 +5,11 @@ public class reverseLinkedList {
     public static void main(String[] args) {
         int[] nodes = { 1, 2, 3, 4, 5 };
 
-        ListNode<Integer> initialList = createInitialList(nodes);
+        var initialList = createInitialList(nodes);
 
         println(initialList);
 
-        ListNode<Integer> resultList = reverseLinkedList(initialList);
+        var resultList = reverseLinkedList(initialList);
 
         println(resultList);
 
@@ -32,12 +32,12 @@ public class reverseLinkedList {
 
             } else {
 
-                ListNode<Integer> lNodePointer = resultL;
+                var lNodePointer = resultL;
                 while (lNodePointer.next != null) {
                     lNodePointer = lNodePointer.next;
                 }
 
-                ListNode lNode = new ListNode(l.value);
+                var lNode = new ListNode(l.value);
                 lNodePointer.next = lNode;
 
             }
