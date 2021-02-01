@@ -1,16 +1,15 @@
 package codeSignal;
 
-public class arrayMaxConsecutiveSum2 {
+public class isAdmissibleOverpayment {
 
     public static void main(String[] args) {
         int[] a = { -3, -2, -1, -4 };
-        int result = arrayMaxConsecutiveSum2(a);
+        int result = isAdmissibleOverpayment(a);
         System.out.println(result);
     }
 
-    // Simple idea of the Kadane’s algorithm is to look for all positive contiguous
-    // segments of the array
-    static int arrayMaxConsecutiveSum2(int[] inputArray) {
+
+    static int isAdmissibleOverpayment(int[] inputArray) {
 
         int size = inputArray.length;
         int max_so_far = Integer.MIN_VALUE, max_ending_here = 0;
